@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #dbeafe, #eff6ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Result Box Styles */
+.result {
+    margin-top: 20px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Color-coded BMI Categories */
+.result.underweight {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.result.normal {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.result.overweight {
+    background-color: #fde68a;
+    color: #92400e;
+}
+
+.result.obese {
+    background-color: #fecaca;
+    color: #991b1b;
+}
